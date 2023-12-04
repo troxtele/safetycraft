@@ -23,6 +23,9 @@ import popupThree from "@/assets/img/boat/popup/popup-3.webp";
 
 // boat spec
 import boatOne from "@/assets/img/boat/boats/boat-1.webp";
+import boatTwo from "@/assets/img/boat/boats/boat-2.webp";
+import boatThree from "@/assets/img/boat/boats/boat-3.webp";
+import boatFour from "@/assets/img/boat/boats/boat-4.webp";
 
 export type Boat = {
   id: string;
@@ -273,8 +276,8 @@ export const allBoatsModels: Boat[] = [
         "The 2750 Ultra Centrecab evolved from our popular walk-around platform with the addition of a lean-forward‘Ultra’ windscreen that provides excellent visibility from inside the vast cabin space. Cast and fish from 360˚ of access to every usable space. It's an adventurer's dream vessel. Smooth riding, very stable and dry, excellent fuel capacity, this big rig is the perfect option for extended trips or overnighters.",
     },
     comparison: {
-      boatImage: boatOne,
-      price: "2000",
+      boatImage: boatTwo,
+      price: "2750",
       title: "EXPLORAR",
       spec: [
         "8.4m (27'5\")",
@@ -395,8 +398,8 @@ export const allBoatsModels: Boat[] = [
         "The 2750 Ultra Centrecab evolved from our popular walk-around platform with the addition of a lean-forward‘Ultra’ windscreen that provides excellent visibility from inside the vast cabin space. Cast and fish from 360˚ of access to every usable space. It's an adventurer's dream vessel. Smooth riding, very stable and dry, excellent fuel capacity, this big rig is the perfect option for extended trips or overnighters.",
     },
     comparison: {
-      boatImage: boatOne,
-      price: "2000",
+      boatImage: boatThree,
+      price: "2070",
       title: "EXPLORAR",
       spec: [
         "8.4m (27'5\")",
@@ -488,8 +491,8 @@ export const allBoatsModels: Boat[] = [
         "The 2750 Ultra Centrecab evolved from our popular walk-around platform with the addition of a lean-forward‘Ultra’ windscreen that provides excellent visibility from inside the vast cabin space. Cast and fish from 360˚ of access to every usable space. It's an adventurer's dream vessel. Smooth riding, very stable and dry, excellent fuel capacity, this big rig is the perfect option for extended trips or overnighters.",
     },
     comparison: {
-      boatImage: boatOne,
-      price: "2000",
+      boatImage: boatFour,
+      price: "2400",
       title: "EXPLORAR",
       spec: [
         "8.4m (27'5\")",
