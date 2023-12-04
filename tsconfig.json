@@ -1,0 +1,36 @@
+/// <reference types="node" />
+{
+  "compilerOptions": {
+    /* ALIASES */
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    /* BASIC OPTIONS */
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "allowJs": false,
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "baseUrl": ".",
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

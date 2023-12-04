@@ -1,0 +1,117 @@
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #ff4a0f;
+}
+
+::selection {
+  color: white;
+  background: #ff4a0f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: auto;
+  padding: 0 1.5rem;
+  max-width: 85rem !important;
+}
+@media screen and (min-width: 640px) {
+  .container {
+    padding: 0 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1620px !important;
+    padding: 0 3.5rem;
+  }
+}
+
+.privacy-policy .points .point li span,
+.terms-and-conditions .points .point li span {
+  margin-right: 0.8rem;
+}
+
+.privacy-policy .header,
+.terms-and-conditions .header {
+  @apply mb-5 font-extrabold;
+}
+
+.sub {
+  display: grid;
+  gap: 1rem;
+}
+.sub span {
+  margin-right: 0.8rem;
+}
+
+.table-property {
+  @apply flex items-center justify-between gap-2 border-t border-gray-200 py-3 text-sm;
+}
+.table-key {
+  @apply font-extrabold;
+}
+.table-value {
+  @apply text-end;
+}
+
+/* swiper */
+.swiper {
+  position: relative;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* gallery */
+.gallery .swiper-pagination-bullet {
+  width: 1.5rem;
+  height: 0.25rem;
+  background: #fff;
+  opacity: 1;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery .swiper-pagination-bullet-active {
+  width: 2.5rem;
+  background-color: #ff4c13;
+}
+
+.image-popup .swiper {
+  overflow: hidden;
+}
+
+/* market availability */
+@media screen and (min-width: 1024px) {
+  .market-availability .arrow::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #fff 40%);
+  }
+}
+
+/* package */
+.boat-page .package .icons img {
+  @apply h-8 w-8 lg:h-[unset] lg:w-full;
+}
+.three-d-model .swiper-pagination-bullet {
+  background-color: #ff4c13 !important;
+  height: 0.7rem !important;
+  width: 0.7rem !important;
+}
+/* swiper-pagination-bullet swiper-pagination-bullet-active  */
