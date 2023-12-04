@@ -50,11 +50,11 @@ export default function ThreeDModel() {
             ))}
           </div>
           {/* right */}
-          <div className="right flex gap-6 w-full">
+          <div className="right flex w-full gap-6">
             {/* img */}
-            <div className="selected-model w-full">
-              <div className="model-img">
-                <img className="w-full" src={model.img} alt="" />
+            <div className="selected-model w-full ">
+              <div className="model-img overflow-hidden rounded-md p-[0.1rem]">
+                <img className="w-full rounded-md" src={model.img} alt="" />
               </div>
             </div>
             {/* details */}

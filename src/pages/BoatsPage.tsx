@@ -29,7 +29,7 @@ const BoatsPage = () => {
 
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <div className="items-left absolute left-[1.5rem] top-2/3 z-10 flex transform flex-col gap-0 sm:left-[7%] sm:top-1/2">
           <TextRevealTW
             text="&#9844;"

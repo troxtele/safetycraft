@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <>
       {/* HEADER */}
-      <div className="relative overflow-hidden">
+      <div className="relative">
         {/*A div with a subtitle a title and a button in the center of the video and align left*/}
         <div className="items-left absolute left-[1.5rem] top-2/3 z-10 flex -translate-y-1/3 transform flex-col gap-0 sm:left-[6%]">
           <TextRevealTW

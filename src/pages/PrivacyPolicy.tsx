@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
     };
   }, []);
   return (
-    <div className="privacy-policy relative overflow-hidden">
+    <div className="privacy-policy relative">
       <div className="relative">
         <div className="items-left - absolute left-[1.5rem] top-2/3 z-10 flex transform flex-col gap-0 sm:left-[7%]">
           <TextRevealTW

@@ -33,7 +33,7 @@ const AboutUsPage = () => {
   }, []);
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <div className="items-left - absolute left-[1.5rem] top-2/3 z-10 flex transform flex-col gap-0 sm:left-[7%]">
           <TextRevealTW
             text="HIGH"
@@ -55,7 +55,7 @@ const AboutUsPage = () => {
           />
           {/* A scroll jumping span left bottom positioned that when is clicked it scrolls to the next section*/}
         </div>
-        <div className="relative flex flex-col items-center justify-center z-50">
+        <div className="relative flex flex-col items-center justify-center">
           <img src={AboutPageImage} alt="homepage" className="h-screen w-screen object-cover " />
           <motion.span
             animate={{ y: scrollY / 10 }}

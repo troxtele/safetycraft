@@ -225,17 +225,45 @@ export const allBoatsModels: Boat[] = [
       tank: "-",
     },
     images: {
-      modelExtendedImg: COMINGSOON1,
-      modelSideImg: COOMINGSOON2,
-      gallery: [],
+      modelExtendedImg: MODEL750LARGE,
+      modelSideImg: MODEL750LITTLE,
+      gallery: [
+        galleryOne,
+        galleryTwo,
+        galleryThree,
+        galleryFour,
+        galleryFive,
+        gallerySix,
+        gallerySeven,
+        galleryEight,
+        galleryNine,
+        galleryTen,
+      ],
     },
     videos: [
       {
         id: "1",
-        title: "XF18",
-        description: "XF18",
-        thumbnail: "https://i.ytimg.com/vi/5ZQJ6Y8E3jU/hqdefault.jpg",
-        src: "https://www.youtube.com/embed/5ZQJ6Y8E3jU",
+        title: "lorem ipsum dolor sit amet",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos doloremque earum odio molestiae blanditiis unde nobis perspiciatis! Quae architecto sed, incidunt minima error explicabo provident suscipit exercitationem, fuga, ipsa quos?",
+        thumbnail: videoBannerOne,
+        src: "https://www.youtube.com/embed/xAaloa9wsIw",
+      },
+      {
+        id: "2",
+        title: "lorem ipsum dolor sit amet",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos doloremque earum odio molestiae blanditiis unde nobis perspiciatis! Quae architecto sed, incidunt minima error explicabo provident suscipit exercitationem, fuga, ipsa quos?",
+        thumbnail: videoBannerTwo,
+        src: "https://www.youtube.com/embed/vmYxPnADbjA",
+      },
+      {
+        id: "3",
+        title: "lorem ipsum dolor sit amet",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos doloremque earum odio molestiae blanditiis unde nobis perspiciatis! Quae architecto sed, incidunt minima error explicabo provident suscipit exercitationem, fuga, ipsa quos?",
+        thumbnail: videoBannerThree,
+        src: "https://www.youtube.com/embed/rGGY6_WCuYg",
       },
     ],
     detailsPage: {

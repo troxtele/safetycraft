@@ -83,7 +83,7 @@ export default function MarketAvailability({ boatVideoData }: MarketAvailability
           </div>
 
           {/* video list */}
-          <div className="video-list relative overflow-hidden lg:col-span-2 lg:h-[550px]">
+          <div className="video-list video-select-grdnt-bg relative overflow-hidden lg:col-span-2 lg:h-[550px] rounded-md">
             <div className="flex h-[inherit] min-w-full max-w-[1200px] overflow-scroll pb-6 lg:grid lg:pb-10 xl:max-w-[60rem] xl:pb-20">
               {boatVideoData.map((item) => (
                 <div

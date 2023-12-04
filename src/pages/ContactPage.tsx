@@ -18,7 +18,7 @@ const ContactPage = () => {
   }, []);
   return (
     <>
-      <div className="relative overflow-hidden">
+      <div className="relative">
         <div className="relative flex flex-col items-center justify-center">
           <div className="items-left absolute left-[1.5rem] top-2/3 z-10 flex transform flex-col sm:left-[7%] ">
             {/* <TextRevealTW
