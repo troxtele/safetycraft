@@ -4,15 +4,13 @@ import { FiPlusSquare } from "react-icons/fi";
 // imge popup
 import ImagePopup from "@/components/boat/ImagePopup";
 
-type featureData = [
-  {
-    id: number;
-    title: string;
-    description: string;
-    image: string;
-    paragraph: string;
-  },
-];
+type featureData = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  paragraph: string;
+}[];
 
 export default function Features({ data }: { data: featureData }) {
   const [activePopup, setActivePopup] = useState(false);
