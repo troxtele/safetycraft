@@ -110,9 +110,17 @@ html {
   @apply h-8 w-8 lg:h-[unset] lg:w-full;
 }
 .three-d-model .swiper-pagination-bullet {
-  background-color: #ff4c13 !important;
+  background-color: #ff9e81!important;
   height: 0.7rem !important;
   width: 0.7rem !important;
+  opacity: 0.5 !important;
+}
+.three-d-model .swiper-slide {
+  @apply !h-full
+}
+.three-d-model .swiper-pagination-bullet-active {
+  background-color: #ff4c13 !important;
+  opacity: 1 !important;
 }
 
 /* maketavailability */
@@ -122,5 +130,8 @@ html {
 
 .model-img {
   background: linear-gradient(145deg, rgba(0, 0, 0, 0) 0%, rgba(255, 75, 20, 1) 100%);
+}
+.baot-model-img-view {
+  background: linear-gradient(130deg, rgba(0, 0, 0, 0) 0%, rgba(255, 75, 20, 0.1) 100%);
 }
 /* swiper-pagination-bullet swiper-pagination-bullet-active  */

@@ -4,6 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import modules
 import { Pagination } from "swiper/modules";
 
+// arrow
+import arrow from "@/assets/img/arrow.svg";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -34,31 +37,42 @@ export default function ThreeDModel() {
             3D STABI <span className="text-primary-700">NAVIGATOR</span>
           </h1>
         </div>
-        <div className="3dmodel-gallery desktop mt-10 hidden gap-10 lg:flex">
+        <div className="3dmodel-gallery desktop mt-10 hidden lg:flex lg:gap-6">
           {/* left */}
-          <div className="select-model grid gap-2">
+          <div className="select-model baot-model-img-view flex flex-col gap-2.5 rounded-lg p-4">
             {modelData.map((item, index) => (
               <div
                 onClick={() => setModel(item)}
                 key={index}
-                className={`model group flex  h-20 w-20 cursor-pointer items-center justify-center overflow-hidden rounded-xl  border-2 transition-all duration-200 ${
+                className={`model group relative flex h-20 w-20 cursor-pointer items-center justify-center overflow-hidden rounded-xl border transition-all duration-200 ${
                   model.id === item.id ? "border-primary-700 ring-2 ring-primary-500 ring-offset-1" : "border-black/50"
                 }`}
               >
-                <img className=" transition-all duration-300 group-hover:scale-110" src={item.img} alt="model" />
+                <img className="transition-all duration-300 group-hover:scale-110" src={item.img} alt="model" />
+
+                {/* arrow */}
+                <div
+                  className={`arrow-middle absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${
+                    model.id === item.id
+                      ? "opacity-100"
+                      : "opacity-0"
+                  }`}
+                >
+                  <img className=" h-[1.7rem] w-[1.7rem] transform opacity-75" src={arrow} alt="" />
+                </div>
               </div>
             ))}
           </div>
           {/* right */}
-          <div className="right flex w-full gap-6">
+          <div className="right flex w-full flex-col gap-6 xl:flex-row">
             {/* img */}
             <div className="selected-model w-full ">
               <div className="model-img overflow-hidden rounded-md p-[0.1rem]">
-                <img className="w-full rounded-md" src={model.img} alt="" />
+                <img className="w-full rounded-md lg:h-[24rem] xl:h-[30rem]" src={model.img} alt="" />
               </div>
             </div>
             {/* details */}
-            <div className="detail max-w-[20rem]">
+            <div className="detail xl:max-w-[20rem]">
               <div className="name">
                 <span className="mr-2 text-lg font-extrabold">Name:</span> Model One
               </div>
@@ -84,7 +98,11 @@ export default function ThreeDModel() {
           >
             {modelData.map((item, index) => (
               <SwiperSlide key={index} className="group relative z-10">
-                <img className="w-full" src={item.img} alt="" />
+                <img
+                  className="h-[10rem] min-h-full w-full sm:!h-[18rem] md:!h-[20rem] xs:h-[15rem] exs:h-[12rem]"
+                  src={item.img}
+                  alt=""
+                />
               </SwiperSlide>
             ))}
           </Swiper>
