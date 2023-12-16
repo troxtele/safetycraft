@@ -54,7 +54,7 @@ export default function Features({ data }: { data: featureData }) {
         <ImagePopup
           setActive={setActivePopup}
           active={activePopup}
-          iamges={data.map((item) => item.image)}
+          images={data.map((item) => item.image)}
           index={activeIndex}
         />
       </div>

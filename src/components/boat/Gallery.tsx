@@ -87,7 +87,7 @@ export default function Gallery({ galleryImgData }: GalleryProps) {
       </div>
 
       {/* popup */}
-      <ImagePopup setActive={setActivePopup} active={activePopup} iamges={galleryImgData} index={activeIndex} />
+      <ImagePopup setActive={setActivePopup} active={activePopup} images={galleryImgData} index={activeIndex} />
     </div>
   );
 }

@@ -29,8 +29,8 @@ export default function MyStabi() {
 
           {/* icons */}
           <div className="social icons mt-4 flex items-center justify-center gap-3">
-            {socialIcons.map((Icon) => (
-              <Link to="/" className="icon text-[1.7rem]">
+            {socialIcons.map((Icon, index) => (
+              <Link key={index} to="/" className="icon text-[1.7rem]">
                 <Icon />
               </Link>
             ))}
@@ -39,7 +39,7 @@ export default function MyStabi() {
 
         {/* images */}
         <div className="images flex flex-col gap-6 sm:flex-row">
-          {stabiImages.slice(0,3).map((item, index) => (
+          {stabiImages.slice(0, 3).map((item, index) => (
             <div key={index} className="single-image mt-10 overflow-hidden rounded-lg">
               <img
                 onClick={() => handleClick(index)}
@@ -52,7 +52,7 @@ export default function MyStabi() {
         </div>
       </div>
       {/* popup */}
-      <ImagePopup setActive={setActivePopup} active={activePopup} iamges={stabiImages} index={activeIndex} />
+      <ImagePopup setActive={setActivePopup} active={activePopup} images={stabiImages} index={activeIndex} />
     </div>
   );
 }

@@ -11,7 +11,7 @@ import arrow from "@/assets/img/arrow.svg";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// all model iamges
+// all model images
 import ImgModelOne from "@/assets/img/boat/3d-model/boat-1.webp";
 import ImgModelTwo from "@/assets/img/boat/3d-model/boat-2.webp";
 import ImgModelThree from "@/assets/img/boat/3d-model/boat-3.webp";
@@ -53,9 +53,7 @@ export default function ThreeDModel() {
                 {/* arrow */}
                 <div
                   className={`arrow-middle absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-all duration-300 ${
-                    model.id === item.id
-                      ? "opacity-100"
-                      : "opacity-0"
+                    model.id === item.id ? "opacity-100" : "opacity-0"
                   }`}
                 >
                   <img className=" h-[1.7rem] w-[1.7rem] transform opacity-75" src={arrow} alt="" />
