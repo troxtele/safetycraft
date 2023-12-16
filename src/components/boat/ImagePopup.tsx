@@ -34,6 +34,8 @@ export default function ImagePopup({
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "unset";
+      swipeRef.current.slideTo(0);
+      setData([]);
     }
   }, [active]);
   return (
