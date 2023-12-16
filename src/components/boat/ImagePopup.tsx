@@ -26,12 +26,10 @@ export default function ImagePopup({
   const [data, setData] = useState<string[]>([]);
 
   useEffect(() => {
-    swipeRef.current.slideTo(0);
-    setData([]);
-    const sortData = images.slice(index).concat(images.slice(0, index));
-    setData(sortData);
     if (active) {
       document.body.style.overflow = "hidden";
+      const sortData = images.slice(index).concat(images.slice(0, index));
+      setData(sortData);
     } else {
       document.body.style.overflow = "unset";
       swipeRef.current.slideTo(0);
@@ -40,7 +38,7 @@ export default function ImagePopup({
   }, [active]);
   return (
     <div
-      className={`popup image-popup fixed inset-0 z-[99999] flex h-screen w-screen items-center justify-center bg-black/90 px-4 transition-all duration-300 sm:px-20 ${
+      className={`popup image-popup fixed inset-0 z-[99999] flex h-screen w-screen items-center justify-center bg-black/90 px-4 transition-all duration-[400ms] sm:px-20 ${
         active ? "visible opacity-100" : "invisible opacity-0"
       }`}
     >
