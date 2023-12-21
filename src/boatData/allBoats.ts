@@ -24,8 +24,24 @@ import popupThree from "@/assets/img/boat/popup/popup-3.webp";
 // boat spec
 import boatOne from "@/assets/img/boat/boats/boat-1.webp";
 import boatTwo from "@/assets/img/boat/boats/boat-2.webp";
-import boatThree from "@/assets/img/boat/boats/boat-3.webp";
-import boatFour from "@/assets/img/boat/boats/boat-4.webp";
+
+export type Comparison = {
+  "Length Metric (feet)": string;
+  "Max Persons": string;
+  "Maximum HP": string;
+  "Maximum Engine Weight": string;
+  "Leg Length": string;
+  "Fuel Tank": string;
+  "External Beam": string;
+  "Internal Beam": string;
+  Deadrise: string;
+  "Tube Thickness": string;
+  "Hull Thickness": string;
+  "Total Sealed Volume (approx)": string;
+  "Dry Hull Weight (approx)": string;
+  "Length on Trailer": string;
+  "Boat Height (approx)": string;
+};
 
 export type Boat = {
   id: string;
@@ -69,9 +85,9 @@ export type Boat = {
   };
   comparison: {
     boatImage: string;
-    price: string;
+    model: string;
     title: string;
-    spec: string[];
+    spec: Comparison;
   };
   featureData: {
     id: number;
@@ -156,25 +172,25 @@ export const allBoatsModels: Boat[] = [
     },
     comparison: {
       boatImage: boatOne,
-      price: "2000",
+      model: "2000",
       title: "EXPLORAR",
-      spec: [
-        "8.4m (27'5\")",
-        "9",
-        "500hp",
-        "635kg (1400lbs)",
-        "25”",
-        "500L (132gal)",
-        "2.54m (100”), 2.5m AUS",
-        "2.04m (80”)",
-        "21.5°",
-        "4mm (5/32”)",
-        "6mm (15/64”)",
-        "2909L (768gal)",
-        "1990kg (4387lbs)",
-        "10.2m (33’6”)",
-        "2.72m (8'.9\")",
-      ],
+      spec: {
+        "Length Metric (feet)": "8.4m (27'5\")",
+        "Max Persons": "9",
+        "Maximum HP": "500hp",
+        "Maximum Engine Weight": "635kg (1400lbs)",
+        "Leg Length": "25”",
+        "Fuel Tank": "500L (132gal)",
+        "External Beam": "2.54m (100”), 2.5m AUS",
+        "Internal Beam": "2.04m (80”)",
+        Deadrise: "21.5°",
+        "Tube Thickness": "4mm (5/32”)",
+        "Hull Thickness": "6mm (15/64”)",
+        "Total Sealed Volume (approx)": "2909L (768gal)",
+        "Dry Hull Weight (approx)": "1990kg (4387lbs)",
+        "Length on Trailer": "10.2m (33’6”)",
+        "Boat Height (approx)": "2.72m (8'.9\")",
+      },
     },
 
     featureData: [
@@ -277,25 +293,25 @@ export const allBoatsModels: Boat[] = [
     },
     comparison: {
       boatImage: boatTwo,
-      price: "2750",
+      model: "2750",
       title: "EXPLORAR",
-      spec: [
-        "8.4m (27'5\")",
-        "9",
-        "500hp",
-        "635kg (1400lbs)",
-        "25”",
-        "500L (132gal)",
-        "2.54m (100”), 2.5m AUS",
-        "2.04m (80”)",
-        "21.5°",
-        "4mm (5/32”)",
-        "6mm (15/64”)",
-        "2909L (768gal)",
-        "1990kg (4387lbs)",
-        "10.2m (33’6”)",
-        "2.72m (8'.9\")",
-      ],
+      spec: {
+        "Length Metric (feet)": "8.4m (27'5\")",
+        "Max Persons": "9",
+        "Maximum HP": "500hp",
+        "Maximum Engine Weight": "635kg (1400lbs)",
+        "Leg Length": "25”",
+        "Fuel Tank": "500L (132gal)",
+        "External Beam": "2.54m (100”), 2.5m AUS",
+        "Internal Beam": "2.04m (80”)",
+        Deadrise: "21.5°",
+        "Tube Thickness": "4mm (5/32”)",
+        "Hull Thickness": "6mm (15/64”)",
+        "Total Sealed Volume (approx)": "2909L (768gal)",
+        "Dry Hull Weight (approx)": "1990kg (4387lbs)",
+        "Length on Trailer": "10.2m (33’6”)",
+        "Boat Height (approx)": "2.72m (8'.9\")",
+      },
     },
 
     featureData: [
@@ -325,10 +341,9 @@ export const allBoatsModels: Boat[] = [
       },
     ],
   },
-
   {
-    id: "model-xf24-cc",
-    modelTitle: "XF24 CC",
+    id: "model-abcd44-cc",
+    modelTitle: "abcd44 CC",
     modelDescription: "Work Tender",
     price: "€ 49.000",
     catalogsrc: CATALOG,
@@ -398,26 +413,26 @@ export const allBoatsModels: Boat[] = [
         "The 2750 Ultra Centrecab evolved from our popular walk-around platform with the addition of a lean-forward‘Ultra’ windscreen that provides excellent visibility from inside the vast cabin space. Cast and fish from 360˚ of access to every usable space. It's an adventurer's dream vessel. Smooth riding, very stable and dry, excellent fuel capacity, this big rig is the perfect option for extended trips or overnighters.",
     },
     comparison: {
-      boatImage: boatThree,
-      price: "2070",
+      boatImage: boatOne,
+      model: "2000",
       title: "EXPLORAR",
-      spec: [
-        "8.4m (27'5\")",
-        "9",
-        "500hp",
-        "635kg (1400lbs)",
-        "25”",
-        "500L (132gal)",
-        "2.54m (100”), 2.5m AUS",
-        "2.04m (80”)",
-        "21.5°",
-        "4mm (5/32”)",
-        "6mm (15/64”)",
-        "2909L (768gal)",
-        "1990kg (4387lbs)",
-        "10.2m (33’6”)",
-        "2.72m (8'.9\")",
-      ],
+      spec: {
+        "Length Metric (feet)": "8.4m (27'5\")",
+        "Max Persons": "9",
+        "Maximum HP": "500hp",
+        "Maximum Engine Weight": "635kg (1400lbs)",
+        "Leg Length": "25”",
+        "Fuel Tank": "500L (132gal)",
+        "External Beam": "2.54m (100”), 2.5m AUS",
+        "Internal Beam": "2.04m (80”)",
+        Deadrise: "21.5°",
+        "Tube Thickness": "4mm (5/32”)",
+        "Hull Thickness": "6mm (15/64”)",
+        "Total Sealed Volume (approx)": "2909L (768gal)",
+        "Dry Hull Weight (approx)": "1990kg (4387lbs)",
+        "Length on Trailer": "10.2m (33’6”)",
+        "Boat Height (approx)": "2.72m (8'.9\")",
+      },
     },
 
     featureData: [
@@ -449,9 +464,9 @@ export const allBoatsModels: Boat[] = [
   },
 
   {
-    id: "model-xf24-cab",
+    id: "model-abcd87-cab",
     price: "-",
-    modelTitle: "XF18",
+    modelTitle: "ABCD87 CAB",
     modelDescription: "-",
     specifications: {
       boa: "-",
@@ -471,17 +486,45 @@ export const allBoatsModels: Boat[] = [
       tank: "-",
     },
     images: {
-      modelExtendedImg: COMINGSOON1,
-      modelSideImg: COOMINGSOON2,
-      gallery: [],
+      modelExtendedImg: MODEL750LARGE,
+      modelSideImg: MODEL750LITTLE,
+      gallery: [
+        galleryOne,
+        galleryTwo,
+        galleryThree,
+        galleryFour,
+        galleryFive,
+        gallerySix,
+        gallerySeven,
+        galleryEight,
+        galleryNine,
+        galleryTen,
+      ],
     },
     videos: [
       {
         id: "1",
-        title: "XF18",
-        description: "XF18",
-        thumbnail: "https://i.ytimg.com/vi/5ZQJ6Y8E3jU/hqdefault.jpg",
-        src: "https://www.youtube.com/embed/5ZQJ6Y8E3jU",
+        title: "lorem ipsum dolor sit amet",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos doloremque earum odio molestiae blanditiis unde nobis perspiciatis! Quae architecto sed, incidunt minima error explicabo provident suscipit exercitationem, fuga, ipsa quos?",
+        thumbnail: videoBannerOne,
+        src: "https://www.youtube.com/embed/xAaloa9wsIw",
+      },
+      {
+        id: "2",
+        title: "lorem ipsum dolor sit amet",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos doloremque earum odio molestiae blanditiis unde nobis perspiciatis! Quae architecto sed, incidunt minima error explicabo provident suscipit exercitationem, fuga, ipsa quos?",
+        thumbnail: videoBannerTwo,
+        src: "https://www.youtube.com/embed/vmYxPnADbjA",
+      },
+      {
+        id: "3",
+        title: "lorem ipsum dolor sit amet",
+        description:
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos doloremque earum odio molestiae blanditiis unde nobis perspiciatis! Quae architecto sed, incidunt minima error explicabo provident suscipit exercitationem, fuga, ipsa quos?",
+        thumbnail: videoBannerThree,
+        src: "https://www.youtube.com/embed/rGGY6_WCuYg",
       },
     ],
     detailsPage: {
@@ -491,26 +534,26 @@ export const allBoatsModels: Boat[] = [
         "The 2750 Ultra Centrecab evolved from our popular walk-around platform with the addition of a lean-forward‘Ultra’ windscreen that provides excellent visibility from inside the vast cabin space. Cast and fish from 360˚ of access to every usable space. It's an adventurer's dream vessel. Smooth riding, very stable and dry, excellent fuel capacity, this big rig is the perfect option for extended trips or overnighters.",
     },
     comparison: {
-      boatImage: boatFour,
-      price: "2400",
+      boatImage: boatTwo,
+      model: "2750",
       title: "EXPLORAR",
-      spec: [
-        "8.4m (27'5\")",
-        "9",
-        "500hp",
-        "635kg (1400lbs)",
-        "25”",
-        "500L (132gal)",
-        "2.54m (100”), 2.5m AUS",
-        "2.04m (80”)",
-        "21.5°",
-        "4mm (5/32”)",
-        "6mm (15/64”)",
-        "2909L (768gal)",
-        "1990kg (4387lbs)",
-        "10.2m (33’6”)",
-        "2.72m (8'.9\")",
-      ],
+      spec: {
+        "Length Metric (feet)": "8.4m (27'5\")",
+        "Max Persons": "9",
+        "Maximum HP": "500hp",
+        "Maximum Engine Weight": "635kg (1400lbs)",
+        "Leg Length": "25”",
+        "Fuel Tank": "500L (132gal)",
+        "External Beam": "2.54m (100”), 2.5m AUS",
+        "Internal Beam": "2.04m (80”)",
+        Deadrise: "21.5°",
+        "Tube Thickness": "4mm (5/32”)",
+        "Hull Thickness": "6mm (15/64”)",
+        "Total Sealed Volume (approx)": "2909L (768gal)",
+        "Dry Hull Weight (approx)": "1990kg (4387lbs)",
+        "Length on Trailer": "10.2m (33’6”)",
+        "Boat Height (approx)": "2.72m (8'.9\")",
+      },
     },
 
     featureData: [

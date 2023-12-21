@@ -1,3 +1,4 @@
+import { useState } from "react";
 import GalleryImage1 from "@/assets/img/gallery/galleryimage1.webp";
 import GalleryImage2 from "@/assets/img/gallery/galleryimage2.webp";
 import GalleryImage3 from "@/assets/img/gallery/galleryimage3.webp";
@@ -8,6 +9,9 @@ import GalleryImage7 from "@/assets/img/gallery/galleryimage7.webp";
 import GalleryImage8 from "@/assets/img/gallery/galleryimage8.webp";
 import GalleryImage9 from "@/assets/img/gallery/galleryimage9.webp";
 import GalleryImage10 from "@/assets/img/gallery/galleryimage10.webp";
+
+// imge popup
+import ImagePopup from "@/components/boat/ImagePopup";
 
 const Gallery = () => {
   const galleryImages = [
@@ -22,6 +26,15 @@ const Gallery = () => {
     GalleryImage9,
     GalleryImage10,
   ];
+
+  const [activePopup, setActivePopup] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [slideChange, setSlideChange] = useState("");
+
+  const handleClick = (index: number) => {
+    setActivePopup(true);
+    setActiveIndex(index);
+  };
 
   return (
     <>
@@ -74,7 +87,11 @@ const Gallery = () => {
         </div>
         <div className="ex:grid-cols-2 grid gap-2 px-6 pb-20 sm:grid-cols-2 sm:px-0 md:grid-cols-4 lg:grid-cols-5">
           {galleryImages.map((image, index) => (
-            <div key={index} className="overflow-hidden rounded-md shadow-xl">
+            <div
+              onClick={() => handleClick(index)}
+              key={index}
+              className="cursor-pointer overflow-hidden rounded-md shadow-xl"
+            >
               <img
                 width={500}
                 height={500}
@@ -85,6 +102,14 @@ const Gallery = () => {
             </div>
           ))}
         </div>
+        {/* popup */}
+        <ImagePopup
+          setActive={setActivePopup}
+          active={activePopup}
+          images={galleryImages}
+          index={activeIndex}
+          setSlide={setSlideChange}
+        />
       </div>
     </>
   );

@@ -11,7 +11,8 @@ import SingleBoatPrice from "@/components/boat/SingleBoatPrice";
 import { allBoatsModels } from "@/boatData/allBoats";
 
 export default function Comparison() {
-  const swiperRef = useRef(null) as any;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const swiperRef = useRef() as any;
   return (
     <div className="boat-price relative pb-20 pt-10 md:py-20">
       <div className="container">
@@ -22,7 +23,7 @@ export default function Comparison() {
         </div>
         <div className="boat-price relative z-10 pb-10 sm:pb-20 sm:pt-10">
           <Swiper
-            onSwiper={(swiper) => {
+            onBeforeInit={(swiper) => {
               swiperRef.current = swiper;
             }}
             breakpoints={{

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import arrow from "@/assets/img/arrow.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ImagePopup from "@/components/boat/ImagePopup";
@@ -10,15 +10,28 @@ type GalleryProps = {
 };
 
 export default function Gallery({ galleryImgData }: GalleryProps) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const galleryRef = useRef(null) as any;
   const [activeGallery, setActiveGallery] = useState(1);
   const [activePopup, setActivePopup] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [slideChange, setSlideChange] = useState("");
 
   const handleClick = (index: number) => {
+    console.log(index);
     setActivePopup(true);
     setActiveIndex(index);
   };
+
+  useEffect(() => {
+    if (slideChange.includes("next")) {
+      galleryRef.current.slideNext();
+    }
+    if (slideChange.includes("prev")) {
+      galleryRef.current.slidePrev();
+    }
+  }, [slideChange]);
+
   return (
     <div className="gallery overflow-hidden pt-10 sm:pb-20">
       <div className="wrapper max-w-screen relative m-auto ">
@@ -27,7 +40,7 @@ export default function Gallery({ galleryImgData }: GalleryProps) {
             galleryRef.current = swiper;
           }}
           onSlideChange={(swiper) => {
-            setActiveGallery(swiper.realIndex);
+            setActiveGallery(swiper.activeIndex);
           }}
           breakpoints={{
             0: {
@@ -87,7 +100,13 @@ export default function Gallery({ galleryImgData }: GalleryProps) {
       </div>
 
       {/* popup */}
-      <ImagePopup setActive={setActivePopup} active={activePopup} images={galleryImgData} index={activeIndex} />
+      <ImagePopup
+        setActive={setActivePopup}
+        active={activePopup}
+        images={galleryImgData}
+        index={activeIndex}
+        setSlide={setSlideChange}
+      />
     </div>
   );
 }
