@@ -64,9 +64,6 @@ export default function ImagePopup({
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
-          onSlideChangeTransitionEnd={(swiper) => {
-            console.log(swiper);
-          }}
           onRealIndexChange={(swiper) => {
             setFirstLoad(true);
             if (firstLoad === false) return;

@@ -18,7 +18,6 @@ export default function Gallery({ galleryImgData }: GalleryProps) {
   const [slideChange, setSlideChange] = useState("");
 
   const handleClick = (index: number) => {
-    console.log(index);
     setActivePopup(true);
     setActiveIndex(index);
   };
