@@ -16,7 +16,8 @@ import gallerySeven from "@/assets/img/boat/gallery/gallery-7.webp";
 import galleryEight from "@/assets/img/boat/gallery/gallery-8.webp";
 import galleryNine from "@/assets/img/boat/gallery/gallery-9.webp";
 import galleryTen from "@/assets/img/boat/gallery/gallery-10.webp";
-// popup img
+
+// popup images
 import popupOne from "@/assets/img/boat/popup/popup-1.webp";
 import popupTwo from "@/assets/img/boat/popup/popup-2.webp";
 import popupThree from "@/assets/img/boat/popup/popup-3.webp";
