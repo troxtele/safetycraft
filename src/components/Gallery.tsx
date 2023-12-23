@@ -29,7 +29,7 @@ const Gallery = () => {
 
   const [activePopup, setActivePopup] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [slideChange, setSlideChange] = useState("");
+  const [, setSlideChange] = useState("");
 
   const handleClick = (index: number) => {
     setActivePopup(true);

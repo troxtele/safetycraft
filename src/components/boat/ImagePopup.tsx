@@ -39,6 +39,7 @@ export default function ImagePopup({
       document.body.style.overflow = "unset";
       setData([]);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active]);
 
   return (
