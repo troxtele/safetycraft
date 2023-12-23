@@ -1,5 +1,5 @@
-import COMINGSOON1 from "@/assets/img/boats/comingsoon1.webp";
-import COOMINGSOON2 from "@/assets/img/boats/comingsoon2.webp";
+// import COMINGSOON1 from "@/assets/img/boats/comingsoon1.webp";
+// import COOMINGSOON2 from "@/assets/img/boats/comingsoon2.webp";
 import MODEL750LITTLE from "@/assets/img/boats/models/700/little.webp";
 import MODEL750LARGE from "@/assets/img/boats/models/700/large.webp";
 import CATALOG from "@/assets/pdf/catalog.pdf";
