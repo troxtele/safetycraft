@@ -1,5 +1,3 @@
-import { FiPlusSquare } from "react-icons/fi";
-
 type featureData = {
   id: number;
   title: string;
@@ -18,11 +16,6 @@ export default function Features({ data }: { data: featureData }) {
             <div key={item.id} className="item grid gap-8 md:grid-cols-2 lg:gap-20">
               <div className="left group relative">
                 <img src={item.image} alt={item.title} />
-
-                {/* imge show */}
-                <div className="plus-img absolute bottom-[1rem] right-[1rem] scale-75 cursor-pointer text-3xl text-white transition-all duration-300 group-hover:rotate-180 group-hover:scale-100">
-                  <FiPlusSquare />
-                </div>
               </div>
 
               {/* right */}
